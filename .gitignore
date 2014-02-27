@@ -1,4 +1,12 @@
 *.class
+.idea
+.idea/*
+
+impex-generator.iml
+impex-generator-api/impex-generator-api.iml
+impex-generator-distribution/impex-generator-distribution.iml
+impex-generator-service/impex-generator-service.iml
+impex-generator-task/impex-generator-task.iml
 
 # Package Files #
 *.jar

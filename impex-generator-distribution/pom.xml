@@ -42,22 +42,18 @@
                     <groupId>log4j</groupId>
                     <artifactId>log4j</artifactId>
                 </exclusion>
-                <exclusion>
+                <!-- exclusion>
                     <groupId>org.apache.velocity</groupId>
                     <artifactId>velocity</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.velocity</groupId>
-                    <artifactId>velocity</artifactId>
-                </exclusion>
+                </exclusion -->
                 <exclusion>
                     <groupId>commons-io</groupId>
                     <artifactId>commons-io</artifactId>
                 </exclusion>
-                <exclusion>
+                <!-- exclusion>
                     <groupId>org.apache.velocity</groupId>
                     <artifactId>com.springsource.org.apache.velocity.tools.view</artifactId>
-                </exclusion>
+                </exclusion -->
             </exclusions>
             <!--<scope>compile</scope>-->
         </dependency>
