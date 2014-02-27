@@ -1,31 +1,35 @@
 impex-generator
 ===============
 
-If you would like to embedd this ant task in your script 
-here is the sample snippet.
+# Build
+Just run
 
-{code}
-<typedef name="impexGen" classname="de.hybris.platform.impexgen.velocity.ant.GenerateLocalizedImpexesTask" onerror="report">
+> mvn clean install
+
+Generated jar inside *impex-generator-distribution/target* should contain all code base - rest dependencies is right from 'platform'
+
+# Embedding
+
+If you would like to embedded this ant task in your script, here is the sample snippet.
+
+```
+<typedef name="impexGen" classname="xxx.platform.impexgen.velocity.ant.GenerateLocalizedImpexesTask" onerror="report">
 				<classpath>
-					<fileset dir="${ext.XXXXX.path}/lib">
+					<fileset dir="${ext.extension.path}/lib">
 						<include name="impex-generator-distribution-1.0-SNAPSHOT.jar"/>
 				</fileset>
-	<!-- all runtime dependencies --->
-
 					<fileset dir="${ext.core.path}/lib">
 						<include name="*.jar"/>
 					</fileset>
 					<fileset dir="${platformhome}/bootstrap/bin/">
 						<include name="*.jar"/>
 					</fileset>
-
 					<fileset dir="${platformhome}/lib">
 						<include name="*.jar"/>
 					</fileset>
-
 					<fileset dir="${ant.home}/lib">
 						<include name="ant*.jar"/>
 					</fileset>
 				</classpath>
 			</typedef>
-{code}
+```
